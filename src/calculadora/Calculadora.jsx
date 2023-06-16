@@ -1,7 +1,7 @@
 import { useState } from "react";
 import BackspaceIcon from '@mui/icons-material/Backspace'; 
-import './styles.css'; 
 import { Button, ButtonGroup, Grid,  TextField, Typography } from "@mui/material";
+import './styles.css'; 
 
 const Calculadora = () => {
 
@@ -36,16 +36,16 @@ const Calculadora = () => {
 
 
   return (
-    <Grid className="calculadora">
+    <Grid className='calculadora'>
        <Typography  sx={{ mb:1 }}>Calculadora</Typography>  
             <Grid container  direction="column" spacing={2} alignItems="center">
                 <TextField
                 type="text"
                 value={result}
-                style={{margin:'20px', marginBottom: '20px', width:'95%', fontSize: '20px'}}/>
+                style={{margin:'20px', marginBottom: '20px', width:'95%'}}/>
                 <ButtonGroup variant="outlined" aria-label="outlined button group" fullWidth>
-                    <Button onClick={clear} className="botones" style={{fontSize:'14px', background:'#eeeeee'}}  >CE</Button>
-                    <Button style={{fontSize:'14px', background:'#eeeeee'}} onClick={clear} className="botones" >C</Button>
+                    <Button onClick={clear} className='botones' style={{fontSize:'14px', background:'#eeeeee'}}  >CE</Button>
+                    <Button style={{fontSize:'14px', background:'#eeeeee'}} onClick={clear} className='botones' >C</Button>
                     <Button style={{fontSize:'14px', background:'#eeeeee'}} onClick={clearOne} className="botones" ><BackspaceIcon style={{ fontSize: '14px' }}/></Button>
                     <Button style={{fontSize:'14px', background:'#eeeeee'}} name="/" onClick={handleClick} className="botones">/</Button>
                 </ButtonGroup>

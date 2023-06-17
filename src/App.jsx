@@ -1,4 +1,4 @@
-import Calculadora from "./calculadora/calculadora"
+import Calculadora from "./calculadora/Calculadora"; 
 
 function App() {
 
